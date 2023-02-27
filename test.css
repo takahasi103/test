@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+
+#header .site-title .title {
+    font-size: 1.5rem;
+    color: #ff0000;
+}
