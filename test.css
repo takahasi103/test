@@ -8,12 +8,37 @@ html {
     font-size: 100%;
 }
 
-
-#header .site-title .title {
-    font-size: 1.5rem;
-    color: #ff0000;
+body {
+    background-color: #e6e2d7;
+    color: #000;
+    font-family: "Noto Serif jp", serif;
 }
 
-#header {
-    background-color: blue;
+a {
+    color: #fff;
+    text-decoration: none;
 }
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+li {
+    list-style: none;
+}
+
+.site-title {
+    line-height: 1;
+    margin-left: 60px;
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
