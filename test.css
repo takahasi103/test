@@ -43,7 +43,8 @@ li {
 
 #header {
     width: 100%;
-    background-image: url(img/mv.jpg);
+    height: 100vh;
+    background-image: url(img/desert.jpg);
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -105,7 +106,7 @@ li {
     letter-spacing: 0.1rem;
 }
 
-#news .left {
+#news .list {
     padding: 80px 100px 0 0;
     writing-mode: vertical-rl;
     -webkit-writing-mode: vertical-rl;
@@ -113,17 +114,17 @@ li {
     -ms-writing-mode: tb-rl;
 }
 
-#news .left dt {
+#news .list dt {
     border-right: solid 1px #000;
     font-size: 0.75rem;
     padding: 15px 30px 15px 5px;
 }
 
-#news .left dd {
+#news .list dd {
     padding: 15px 0 15px 30px;
 }
 
-#news .left dd:last-child {
+#news .list dd:last-child {
     border-left: solid 1px #000;
 }
 
@@ -158,6 +159,7 @@ li {
     color: #fff;
     padding: 50px 0;
     text-align: center;
+    position: absolute;
     bottom: -20px;
 }
 
@@ -235,7 +237,106 @@ li {
     margin-left: 25px
 }
 
-#footer .copyright {
+#footer .copyright  {
     font-size: 0.625rem;
     text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    .wrapper {
+        max-width: 100%;
+    }
+
+    #header {
+        background-image: url(img/italy.jpg);
+        padding: 20px;
+        margin-bottom: 80px;
+    }
+
+    #header .onlinestore {
+        left: 20px;
+        bottom: 20px;
+    }
+
+    #news {
+        margin-bottom: 80px;
+    }
+
+    #news .sec-title .ja {
+        font-size: 1.75rem
+    }
+
+    #news .left {
+        padding: 20px 30px 0 0;
+    }
+
+    #news .list dt {
+        padding: 15px 12px 15px 5px;
+    }
+
+    #news .list dt:nth-of-type(n + 4) {
+        display: none
+    }
+
+    #news .list dd {
+        padding: 15px 0 15px 12px;
+    }
+
+    #news .list dd:nth-of-type(3) {
+        border-left: solid 1px #000;
+    }
+
+    #news .list dd:nth-of-type(n + 4) {
+        display: none;
+    }
+
+    .products {
+        margin-bottom: 100px;
+    }
+
+    .products .sec-title .ja {
+        font-size: 1.5rem;
+    }
+
+    .products .sec-title .en {
+        display: none;
+    }
+
+    .products .img {
+        width: 90%
+    }
+
+    .products .text {
+        width: 64%;
+        font-size: 0.875rem;
+        padding: 30px 0;
+    }
+
+    #products1 .sec-title {
+        margin-left: 10px;
+    }
+
+    #products2 .sec-title {
+        margin-right: 10px;
+    }
+
+    #footer {
+        padding: 40px 20px 30px 20px;
+    }
+
+    #footer .inner .logo {
+        margin-left: 25px;
+    }
+
+    #footer .menu li {
+        margin-left: 10px;
+    }
+
+    #footer .menu {
+        font-size: 0.875rem;
+        margin-right: 25px
+    }
+
+
 }
